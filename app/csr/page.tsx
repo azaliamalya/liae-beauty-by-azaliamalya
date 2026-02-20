@@ -11,7 +11,7 @@ const products = [
   { name: "Eyeliner ", price: 90000, image: "/eyeliner.jpg" },
   { name: "Eyeshadow ", price: 100000,image: "/eyeshadow.jpg" },
   { name: "Highlighter ", price: 85000, image: "/highlighter.jpg" },
-  { name: "Brow Pomade ", price: 65000, image: "/brow Pomade.jpg" },
+  { name: "Brow Pomade ", price: 65000, image: "/brow pomade.jpg" },
   { name: "Compact Powder ", price: 60000, image: "/compact powder.jpg" },
   { name: "Cushion ", price: 90000, image: "/cushion.jpg" },
   { name: "Concealer ", price: 55000, image: "/concealer.jpg" },

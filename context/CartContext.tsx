@@ -18,7 +18,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [cart, setCart] = useState<CartItem[]>([]);
-  const [discount, setDiscount] = useState(0);
+  const [discount, setDiscount] = useState(20); // misalnya 20%
 
   useEffect(() => {
     const savedDiscount = localStorage.getItem("discount");
