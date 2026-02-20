@@ -3,17 +3,15 @@ export default function HomePage() {
     <div
       style={{
         textAlign: "center",
-        padding: "10px 10px",
+        padding: "40px 20px",
         background: "#ffe6f2",
-        minHeight: "150vh",
+        minHeight: "100vh",
         fontFamily: "Playfair Display, serif",
-        fontSize: "10px",
       }}
     >
       <h1
         style={{
-          fontFamily: "Playfair Display, serif",
-          fontSize: "30px",
+          fontSize: "clamp(26px, 5vw, 36px)", // responsive font
           color: "#cc3366",
           marginBottom: "10px",
         }}
@@ -24,44 +22,44 @@ export default function HomePage() {
       <p
         style={{
           color: "#ef5689",
-          fontSize: "20px",
-          marginBottom: "50px",
+          fontSize: "clamp(16px, 3vw, 20px)", // responsive font
+          marginBottom: "40px",
         }}
       >
         Be Pretty, Be You ˗ˏˋ ♡ ˎˊ˗
       </p>
 
-      {/* --- BAGIAN FOTO PRODUK --- */}
+      {/* FOTO PRODUK */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          gap: "20px", // Jarak antar foto
-          flexWrap: "wrap", // Agar rapi saat dibuka di HP
+          gap: "20px",
+          flexWrap: "wrap",
         }}
       >
         {/* Foto Kiri */}
         <img
-          src="/makeup2.jpg" // Ganti dengan nama file foto ke-2
+          src="/makeup2.jpg"
           alt="Produk Kiri"
           style={{
-            width: "180px",
-            height: "180px",
+            width: "clamp(120px, 30vw, 180px)",
+            height: "clamp(120px, 30vw, 180px)",
             borderRadius: "30%",
             objectFit: "cover",
             boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-            opacity: "0.8", // Efek sedikit pudar agar fokus ke tengah
+            opacity: "0.8",
           }}
         />
 
-        {/* Foto Utama (Tengah) */}
+        {/* Foto Tengah */}
         <img
           src="/makeup.jpg"
           alt="Makeup Utama"
           style={{
-            width: "250px",
-            height: "250px",
+            width: "clamp(180px, 40vw, 260px)",
+            height: "clamp(180px, 40vw, 260px)",
             borderRadius: "30%",
             objectFit: "cover",
             boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
@@ -70,11 +68,11 @@ export default function HomePage() {
 
         {/* Foto Kanan */}
         <img
-          src="/makeup3.jpg" // Ganti dengan nama file foto ke-3
+          src="/makeup3.jpg"
           alt="Produk Kanan"
           style={{
-            width: "180px",
-            height: "180px",
+            width: "clamp(120px, 30vw, 180px)",
+            height: "clamp(120px, 30vw, 180px)",
             borderRadius: "30%",
             objectFit: "cover",
             boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
@@ -82,9 +80,6 @@ export default function HomePage() {
           }}
         />
       </div>
-      {/* --------------------------- */}
-
-      <br />
 
       <a
         href="/csr"
@@ -97,7 +92,7 @@ export default function HomePage() {
           fontWeight: "500",
           letterSpacing: "1px",
           display: "inline-block",
-          marginTop: "80px",
+          marginTop: "60px",
           boxShadow: "0 6px 15px rgba(255,77,148,0.4)",
         }}
       >

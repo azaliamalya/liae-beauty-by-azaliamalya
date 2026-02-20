@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; // 1. Import komponen Footer
+import Footer from "../components/Footer";
 import { CartProvider } from "../context/CartContext";
 
 export default function RootLayout({
@@ -11,22 +11,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Responsive Mobile */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* Google Fonts */}
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap"
           rel="stylesheet"
         />
       </head>
 
-      <body style={{ margin: 0, display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+      <body
+        style={{
+          margin: 0,
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          fontFamily: "Poppins, sans-serif",
+        }}
+      >
         <CartProvider>
           <Navbar />
-          
-          {/* Main content akan mengambil ruang sisa agar footer tetap di bawah */}
+
+          {/* Content */}
           <main style={{ flex: 1 }}>
             {children}
           </main>
 
-          <Footer /> {/* 2. Letakkan Footer di sini */}
+          <Footer />
         </CartProvider>
       </body>
     </html>
